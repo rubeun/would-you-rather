@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.29);
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  border-color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav ul {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  float: left;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+.current-user {
+  width: 30%;
+  padding: 0;
+  float: right;
+  text-align: right;
+}
+
+.user-logged-out {
+  float: right;
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 12px;
+}
+
+.current-username {
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 12px;
+}
+
+.log-out {
+  float: left;
+  text-align: right;
+  cursor: pointer;
+  padding-top: 12px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.text-link {
+  color: rgb(77, 77, 223);
+  text-decoration: underline;
+}
+
+.login-user {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.user-list li {
+  cursor: pointer;
+}
+
+.user-avatar {
+  height: 50px;
+  width: 20%;
+  padding: 10px 0 10px 0;
+  float: left;
+  border: 1px solid #000;
+  background-color: #888;
+}
+
+.user-avatar img {
+  margin: 0 0 0 18px;
+}
+
+.user-details {
+  width: 74%;
+  height: 50px;
+  padding: 10px 0 10px 20px;
+  float: left;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.title-unanswered {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.title-answered {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.unanswered-question {
+  border: 1px solid #252525;
+  background-color: #ccf;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.answered-question {
+  border: 1px solid #252525;
+  background-color: #cfc;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.leaderboard-list li {
+  margin: 0 auto;
+  list-style: decimal;
+  border: 1px dotted #000;
+  background-color: rgb(147, 208, 236);
+  width: 70%;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.author-time-date {
+  font-size: 11px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Blink */ 
+.blink {
+  animation-duration: 1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+  from {
+      color: #000;
+      opacity: 1;
+  }
+  to {
+      color: #f00;
+      opacity: 0.3;
+  }
+}
